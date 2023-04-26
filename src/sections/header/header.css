@@ -24,12 +24,10 @@
 
 .header__title{
     border-bottom: 2px solid white;
-    font-size: 28px;
 }
 
 .header__subtitle{
     margin-top: -15px;
-    font-size: 25px;
 }
 
 .header__nav{
