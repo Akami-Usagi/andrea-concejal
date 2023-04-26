@@ -1,0 +1,25 @@
+.banner{
+    background-image: linear-gradient(180deg, rgba(26,70,130,1) 0%, rgba(63,100,150,1) 40%, rgb(218, 218, 218) 100%);
+    
+}
+
+.banner__image{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.banner__image__movil{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .banner__image{
+        display: none;
+    }
+
+    .banner__image__movil{
+        display: initial;
+        width: 100%;
+        border-radius: 40px;
+    }
+}
