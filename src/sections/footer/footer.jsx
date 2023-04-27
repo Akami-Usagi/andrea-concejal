@@ -6,7 +6,7 @@ function Footer (){
         
         <div className="footer">
             <div className="footer__partido">
-                <img src="/img/logo_democrata.svg" alt="logo" className="footer__logo"/>
+                <a href="https://partido-democratacolombiano.com/"><img src="/img/logo_democrata.svg" alt="logo" className="footer__logo"/></a>
                 <div className="footer__text">
                     <h2 className="footer__title">Partido Democrata Colombiano</h2>
                     <h4 className="footer__subtitle">Vamos Juntos</h4>

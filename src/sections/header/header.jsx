@@ -7,7 +7,7 @@ function Header() {
 
     return <header className="header">
         <div className="header__main">
-            <img src="/img/logo_democrata.svg" alt="logo" className="header__logo"/>
+            <a href="https://partido-democratacolombiano.com/"><img src="/img/logo_democrata.svg" alt="logo" className="header__logo"/></a>
             <div className="header__text">
                 <h2 className="header__title">Partido Democrata Colombiano</h2>
                 <h4 className="header__subtitle">Vamos Juntos</h4>
