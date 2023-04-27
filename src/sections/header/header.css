@@ -43,7 +43,7 @@
 }
 
 .header__nav__item a{
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 0px 15px;
     color: white;
     text-decoration: none;
@@ -53,16 +53,30 @@
     padding: 2px 20px;
     font-weight: bolder;
     transition: 400ms ease-in-out;
+    cursor: pointer;
 }
 
 .header__nav__item a:hover{
     background-color: white;
     color: #1A4682;
-    padding: 5px 30px;
+    padding: 0px 35px;
 }
 
 /*Responsive*/
-@media only screen and (max-width: 476px){
+
+@media only screen and (max-width: 1071px){
+    .header__nav__list{
+        padding: initial;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .header__nav__item a{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 505px){
     .header{
         display: flex;
         flex-direction: column;
@@ -87,7 +101,12 @@
     }
 
     .header__nav__list{
+        display: none;
         padding: initial;
+    }
+
+    .header__nav__item a{
+        font-size: 0.8rem;
     }
 }
 

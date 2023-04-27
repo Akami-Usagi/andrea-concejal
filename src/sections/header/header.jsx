@@ -2,6 +2,9 @@ import "./header.css"
 import React from "react"
 
 function Header() {
+
+    
+
     return <header className="header">
         <div className="header__main">
             <img src="/img/logo_democrata.svg" alt="logo" className="header__logo"/>
@@ -12,9 +15,11 @@ function Header() {
         </div>
         <nav className="header__nav">
             <ul className="header__nav__list">
-                <li className="header__nav__item"><a href="#">Inicio</a></li>
-                <li className="header__nav__item"><a href="#">Sobre Mi</a></li>
-                <li className="header__nav__item"><a href="#">Contacto</a></li>
+                <li className="header__nav__item"><a href="#banner">Inicio</a></li>
+                <li className="header__nav__item"><a href="#about">Sobre Mi</a></li>
+                <li className="header__nav__item"><a href="#objetive">Objetivos</a></li>
+                <li className="header__nav__item"><a href="#footer">Contacto</a></li>
+
             </ul>
         </nav>
     </header>

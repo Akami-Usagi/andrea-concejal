@@ -1,0 +1,60 @@
+.card{
+    width: 400px;
+}
+
+.card__body{
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    
+}
+
+.card__image{
+    width: 400px;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+.card__foot{
+    width: 400px;
+    background-color: white;
+    margin-top: -15px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.card__letter{
+    margin: initial;
+    text-align: center;
+    font-size: 100px;
+}
+
+.card__text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1A4682;
+}
+
+@media only screen and (max-width: 476px){
+    .card{
+        width: 80%;
+    }
+    
+    .card__body{
+        width: 100%;
+        margin: initial;
+    }
+
+    .card__image{
+        width: 100%;
+    }
+
+    .card__foot{
+        width: 100%;
+    }
+
+    .card__letter{
+        font-size: 2rem;
+    }
+}

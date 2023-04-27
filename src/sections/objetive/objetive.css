@@ -1,0 +1,29 @@
+.objetive{
+    margin-top: 60px;
+}
+
+.objetive__title{
+    text-align: center;
+    font-weight: bolder;
+    color: #1A4682;
+}
+
+.objetive__cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    background-color: rgb(218, 218, 218);
+}
+
+@media only screen and (max-width: 476px){
+    .objetive{
+        padding: initial;
+        margin: initial;
+    }
+
+    .objetive__cards{
+        padding: initial;
+        margin: initial;
+    }
+}
