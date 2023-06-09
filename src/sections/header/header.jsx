@@ -7,10 +7,10 @@ function Header() {
 
     return <header className="header">
         <div className="header__main">
-            <a href="https://partido-democratacolombiano.com/"><img src="/img/logo_democrata.svg" alt="logo" className="header__logo"/></a>
+            <a href="https://www.andreablandon.art/"><img src="/img/andrea_header_logo.svg" alt="logo" className="header__logo"/></a>
             <div className="header__text">
-                <h2 className="header__title">Partido Democrata Colombiano</h2>
-                <h4 className="header__subtitle">Vamos Juntos</h4>
+                <h2 className="header__title">Andrea Blandon</h2>
+                <h4 className="header__subtitle">El ABC del Cambio!</h4>
             </div>
         </div>
         <nav className="header__nav">

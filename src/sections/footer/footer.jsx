@@ -6,13 +6,13 @@ function Footer (){
         
         <div className="footer">
             <div className="footer__partido">
-                <a href="https://partido-democratacolombiano.com/"><img src="/img/logo_democrata.svg" alt="logo" className="footer__logo"/></a>
+                <a href="https://www.andreablandon.art/"><img src="/img/andrea_header_logo.svg" alt="logo" className="footer__logo"/></a>
                 <div className="footer__text">
-                    <h2 className="footer__title">Partido Democrata Colombiano</h2>
-                    <h4 className="footer__subtitle">Vamos Juntos</h4>
+                    <h2 className="footer__title">Andrea Blandon</h2>
+                    <h4 className="footer__subtitle">El ABC del Cambio!</h4>
                 </div>
             </div>
-            <img src="/img/andrea_logo.svg" alt="logo andrea" className="andrea__logo"/>
+            
             <div className="footer__icons">
                 <a href="https://www.facebook.com/" target="blank"><BsFacebook className="footer__icon__item"/></a>
                 <a href="https://www.instagram.com/" target="blank"><BsInstagram className="footer__icon__item"/></a>

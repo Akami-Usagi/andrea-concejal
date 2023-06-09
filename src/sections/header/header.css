@@ -14,8 +14,10 @@
 }
 
 .header__logo{
-    width: 100px;
+    width: 150px;
     padding-right: 20px;
+    position: relative;
+    top: 5px;
 }
 
 .header__text{
@@ -39,27 +41,37 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    list-style-type: none;    
+    list-style-type: none;
+    gap: 20px;
 }
 
 .header__nav__item a{
     font-size: 1.2rem;
-    padding: 0px 15px;
+    
     color: white;
     text-decoration: none;
     border: 2px solid white;
-    margin: 0px 10px;
+   
     border-radius: 20px;
     padding: 2px 20px;
     font-weight: bolder;
     transition: 400ms ease-in-out;
     cursor: pointer;
 }
+.header__nav__item{
+    transition: 400ms ease-in-out;
+}
+.header__nav__item:hover{
+    transition: 400ms ease-in-out;
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
+}
 
 .header__nav__item a:hover{
     background-color: white;
     color: #1A4682;
-    padding: 0px 35px;
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
 }
 
 /*Responsive*/
