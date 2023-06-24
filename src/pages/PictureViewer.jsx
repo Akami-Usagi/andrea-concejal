@@ -16,19 +16,11 @@ const ContentDiv = styled.div`
     box-shadow: 15px 15px 20px rgba(0,0,0,0.5);
     margin-bottom: 20px;
     border-radius: 20px;
-`
-const PictureDiv = styled.div`
-    width: 350px;
-    height: 500px;
     overflow: hidden;
-    border-radius: 20px;
-`
-const Image = styled.img`
-    width: 400px;
-    position: relative;
-    bottom: 150px;
     
 `
+
+
 const BottomDiv = styled.div`
     width: 350px;
     height: 100px;
@@ -65,14 +57,24 @@ export default function PictureViewer({picCode}){
         saveAs(`https://i.imgur.com/${picCode}.jpg`, "imagenCabalgata.jpg")
     }
 
+    const PictureDiv = styled.div`
+        width: 100%;
+        height: 500px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: url(${`https://i.imgur.com/${picCode}.jpg`}) no-repeat center;
+        background-size: cover;
+
+    `
+
     return(
         <ViewerDiv>
             <h1>Disfruta de tu Fotografia!</h1>
             <ContentDiv>
-                <PictureDiv>
-                <Image src={`https://i.imgur.com/${picCode}.jpg`} alt="Imagen"/>
-                
-                </PictureDiv>
+                <PictureDiv></PictureDiv>
                 <BottomDiv>
                         <BootomLogo src="/img/header_banner.svg" alt="Logo" />
                         <BootomLogo src="/img/andrea_header_logo_dark.svg" alt="Logo" />
