@@ -3,8 +3,8 @@ import "./banner.css"
 
 function Banner() {
     return <div className="banner">
-        <img src="/img/main_banner.png" alt="banner" className="banner__image"/>
-        <img src="/img/main_banner_movil.png" alt="movilbanner" className="banner__image__movil"/>
+        <img src="/img/banner_coneja.webp" alt="banner" className="banner__image"/>
+        <img src="/img/banner_coneja_movil.webp" alt="movilbanner" className="banner__image__movil"/>
     </div>
 }
 

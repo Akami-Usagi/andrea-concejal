@@ -1,9 +1,14 @@
 import "./header.css"
 import React from "react"
+import { Link } from "react-router-dom"
+import { styled } from "styled-components"
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+`
 
 function Header() {
-
-    
+  
 
     return <header className="header">
         <div className="header__main">
@@ -15,7 +20,7 @@ function Header() {
         </div>
         <nav className="header__nav">
             <ul className="header__nav__list">
-                <li className="header__nav__item"><a href="#banner">Inicio</a></li>
+                <StyledLink to={"/"}><li className="header__nav__item"><a href="/">Inicio</a></li></StyledLink>
                 <li className="header__nav__item"><a href="#about">Sobre Mi</a></li>
                 <li className="header__nav__item"><a href="#objetive">Objetivos</a></li>
                 <li className="header__nav__item"><a href="#footer">Contacto</a></li>
