@@ -16,8 +16,8 @@ export default function Main({setPicCode}){
   
 
     return(
-        <div className='main__div'>
-      <PictureModal isOpen={modalIsOpen} onClose={closeModal} setPicCode={setPicCode}/>
+    <div className='main__div'>
+      {/*<PictureModal isOpen={modalIsOpen} onClose={closeModal} setPicCode={setPicCode}/>*/}
       <section id='banner'>
         <Banner/>
       </section>
