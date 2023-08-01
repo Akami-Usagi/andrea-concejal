@@ -1,31 +1,28 @@
 import React from 'react';
-
 import Banner from '../sections/banner/banner';
 import About from '../sections/about/about';
 import Objetive from '../sections/objetive/objetive';
+import Footer from '../sections/footer/footer';
 
-import PictureModal from '../components/PictureModal';
-import { useState } from 'react';
 
-export default function Main({setPicCode}){
+export default function Main({setObjetiveData, openModal, banner, changeBanner}){
 
-    const [modalIsOpen, setModalIsOpen] = useState(true); //booleano para definir si el modal esta abierto
-    const closeModal = () => {
-    setModalIsOpen(false);
-  };
+    
   
 
     return(
     <div className='main__div'>
-      {/*<PictureModal isOpen={modalIsOpen} onClose={closeModal} setPicCode={setPicCode}/>*/}
       <section id='banner'>
-        <Banner/>
+        <Banner banner={banner} changeBanner={changeBanner}/>
       </section>
       <section id='about'>
         <About/>
       </section>
       <section id='objetive'>
-        <Objetive/>
+        <Objetive setObjetiveData={setObjetiveData} openModal={openModal}/>
+      </section>
+      <section id='footer'>
+        <Footer/>
       </section>
     </div>
     )

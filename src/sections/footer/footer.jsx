@@ -1,5 +1,6 @@
 import "./footer.css";
-import {BsFacebook, BsWhatsapp, BsTwitter, BsInstagram} from 'react-icons/bs';
+import {BsFacebook, BsInstagram} from 'react-icons/bs';
+import {FaTiktok} from 'react-icons/fa';
 
 function Footer (){
     return <footer>
@@ -14,10 +15,9 @@ function Footer (){
             </div>
             
             <div className="footer__icons">
-                <a href="https://www.facebook.com/" target="blank"><BsFacebook className="footer__icon__item"/></a>
-                <a href="https://www.instagram.com/" target="blank"><BsInstagram className="footer__icon__item"/></a>
-                <a href="https://twitter.com/" target="blank"><BsTwitter className="footer__icon__item"/></a>
-                <a href="https://www.whatsapp.com/" target="blank"><BsWhatsapp className="footer__icon__item"/></a>
+                <a href="https://www.facebook.com/conejita71" target="blank"><BsFacebook className="footer__icon__item"/></a>
+                <a href="https://www.instagram.com/usagi_sauria/" target="blank"><BsInstagram className="footer__icon__item"/></a>
+                <a href="https://www.tiktok.com/@lilithusagi" target="blank"><FaTiktok className="footer__icon__item"/></a>
             </div>
         </div>
         

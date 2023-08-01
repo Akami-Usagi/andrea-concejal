@@ -1,10 +1,13 @@
 import "./banner.css"
 
 
-function Banner() {
-    return <div className="banner">
+function Banner({banner, changeBanner}) {
+
+
+
+    return <div className="banner" onClick={()=> changeBanner(!banner)}>
         <img src="/img/banner_coneja.webp" alt="banner" className="banner__image"/>
-        <img src="/img/banner_coneja_movil.webp" alt="movilbanner" className="banner__image__movil"/>
+        <img src={banner ? "/img/banner_coneja_movil.webp" : "/img/banner_sona.webp"} alt="movilbanner" className="banner__image__movil"/>
     </div>
 }
 

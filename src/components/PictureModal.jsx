@@ -1,8 +1,6 @@
 import React from "react";
 import  styled from "styled-components";
 import Modal from "react-modal"
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 Modal.setAppElement('#root'); 
 
@@ -37,60 +35,43 @@ const ContentDiv = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
+    bottom: 100px;
     
 `
 const ModalClose = styled.h1`
     width: 40px;
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 90px;
+    right: 1px;
     cursor: pointer;
 `
+
 const ModalImage = styled.img`
-    width: 300px;
+    width: 400px;
+    height: 200px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
     border-radius: 20px;
+    margin-top: -50px;
+    @media(max-width: 450px){
+        width: 90%;
+        height: auto;
+    }
 `
 const ModalParraf = styled.p`
     font-weight: bold;
     font-size: 20px;
-`
-const ModalImput = styled.input`
-    height: 50px;
-    width: 300px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
-    &:focus{
-        border-color: #1A4682;
-    }
-`
-const ModalButton = styled.button`
-    margin-top: 30px;
-    width: 200px;
-    border-radius: 15px;
-    border: 2px solid #1A4682;
-    color: white;
-    background-color: #1A4682;
-    padding: 15px;
-    font-size: 20px;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
-    transition: 400ms ease-in-out;
-    &:hover{
-        background-color: white;
-        color: #1A4682;
-        font-weight: bold;
-        border: 2px solid #1A4682;
-    }
+    color: #1A4682;
+    width: 90%;
 `
 
-export default function PictureModal({ isOpen, onClose, setPicCode}){
 
-    const [code, setCode] = useState("")
-    const navigate = useNavigate()
+export default function PictureModal({isOpen, onClose, objetiveData}){
+
+    const ModalTitle = styled.h1`
+        font-size: 100px;
+        color: ${objetiveData.color};
+    `
 
     
 
@@ -104,20 +85,10 @@ export default function PictureModal({ isOpen, onClose, setPicCode}){
         >
             <ContentDiv>
                 <ModalClose onClick={onClose}>X</ModalClose>
-                <h1>Descarga tu foto en la Feria 70 de Guadalajara de Buga</h1>
-                <ModalImage src="/img/feria_image.webp" alt="Imagen Feria 70 de Buga" />
-                <ModalParraf>ingresa el codigo para descargar tu imagen</ModalParraf>
-                <ModalImput type="text" onChange={(event) => {
-                    setCode(event.target.value)
-                }}/>
-                <ModalButton onClick={()=> {
-                    if(code === ""){
-                        alert("Ingresa un codigo valido")
-                    }else{
-                        setPicCode(code)
-                        navigate("/picview")
-                    }
-                }}>Ver Imagen</ModalButton>
+                <ModalTitle>{objetiveData.letra}</ModalTitle>
+                <ModalImage src={objetiveData.img} alt="Imagen" />
+                <ModalParraf>{objetiveData.texto}</ModalParraf>
+                
             </ContentDiv>            
         </ModalDiv>
     </div>

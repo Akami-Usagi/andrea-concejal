@@ -18,8 +18,6 @@ const ContentDiv = styled.div`
     overflow: hidden;
     
 `
-
-
 const BottomDiv = styled.div`
     width: 350px;
     height: 100px;

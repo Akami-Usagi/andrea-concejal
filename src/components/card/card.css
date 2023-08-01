@@ -12,6 +12,7 @@
 
 .card__image{
     width: 400px;
+    height: 200px;
     border-radius: 15px 15px 0px 0px;
     
 }

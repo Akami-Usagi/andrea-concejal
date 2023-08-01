@@ -1,23 +1,35 @@
 import './App.css';
 import Main from './pages/Main';
-import PictureViewer from './pages/PictureViewer';
 import Header from './sections/header/header';
-import Footer from './sections/footer/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import PictureModal from './components/PictureModal';
 
 function App() {
-  const [picCode, setPicCode] = useState("")
+  
+  const [objetiveData, setObjetiveData] = useState([])
+  const [modalIsOpen, setModalIsOpen] = useState(false); //booleano para definir si el modal esta abierto
+  const [banner, setbanner] = useState(true);
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+  const openModal = () => {
+    setModalIsOpen(true)
+  }
+  const changeBanner = () => {
+    setbanner(!banner)
+  }
+  
+
   
 
   return (
     <Router>
     <Header/>
+    <PictureModal objetiveData={objetiveData} isOpen={modalIsOpen} onClose={closeModal} openModal={openModal}/>
     <Routes>
-      <Route path='/' element={<Main setPicCode={setPicCode}/>}/>
-      <Route path='/picview' element={<PictureViewer picCode={picCode}/>}/>
+      <Route path='/' element={<Main setObjetiveData={setObjetiveData} openModal={openModal} banner={banner} changeBanner={changeBanner}/>}/>
     </Routes>
-    <Footer/>
   </Router>     
   )
 }
