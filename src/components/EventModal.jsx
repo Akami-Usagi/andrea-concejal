@@ -116,9 +116,9 @@ export default function EventModal({isOpen, onClose}){
                 
                 <ButtonsDiv>
                     <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Asistencia</ModalButton>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Party Animals</ModalButton>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Just Dance</ModalButton>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Cosplay</ModalButton>
+                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLScV9iuTghYnv48drTk7QvptMfGb6i6Ir7_8oTcxY1hD_JPFhQ/viewform?usp=sf_link" target="blank">Party Animals</ModalButton>
+                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSeNJ0zM0DMrjftIh_2IphWi7Etd-xqLvKwBlqiodTQQ3aw9wg/viewform?usp=sf_link" target="blank">Just Dance</ModalButton>
+                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSe2qF4aSTwAJbMGpLm8NEKztXQainvn3RY18To9yxgEgxmJMg/viewform?usp=sf_link" target="blank">Cosplay</ModalButton>
                 </ButtonsDiv>
             </ContentDiv>            
         </ModalDiv>
