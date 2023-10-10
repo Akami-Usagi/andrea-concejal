@@ -111,7 +111,7 @@ export default function EventModal({isOpen, onClose}){
             <ContentDiv>
                 <ModalClose onClick={onClose}>X</ModalClose>
                 
-                <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Parque Fuenmayor (Frente al Hospital San Jose)</ModalParraf>
+                <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Auditorio Club de Leones, Calle 7 # 10-12</ModalParraf>
                 <ModalImage src="/img/Asistencia.png" alt="Imagen Feria 70 de Buga" />
                 
                 <ButtonsDiv>
