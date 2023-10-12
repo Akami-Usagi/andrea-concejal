@@ -48,12 +48,7 @@ const ModalClose = styled.h1`
     right: 30px;
     cursor: pointer;
 `
-const ModalImage = styled.img`
-    width: 90%;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
-    border-radius: 20px;
-    margin-bottom: 20px;
-`
+
 const ModalParraf = styled.p`
     width: 95%;
     font-weight: bold;
@@ -93,9 +88,18 @@ const ButtonsDiv= styled.div`
         gap: 0;
         margin-top: -30px;
     }
-
-
 `
+const VPlayer = styled.iframe`
+    width: 350px;
+    height: 197px;
+    
+    border: none;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+    
+    
+`
+
 
 export default function EventModal({isOpen, onClose}){
 
@@ -112,8 +116,8 @@ export default function EventModal({isOpen, onClose}){
                 <ModalClose onClick={onClose}>X</ModalClose>
                 
                 <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Auditorio Club de Leones, Calle 7 # 10-12</ModalParraf>
-                <ModalImage src="/img/Asistencia.png" alt="Imagen Feria 70 de Buga" />
-                
+                <VPlayer src={`https://www.youtube.com/embed/RYsrtnTkeHY?autoplay=1&mute=1&loop=1&playlist=RYsrtnTkeHY`} title="YouTube video player" frameborder="0" allow="fullscreen" ></VPlayer>
+
                 <ButtonsDiv>
                     <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Asistencia</ModalButton>
                     <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLScV9iuTghYnv48drTk7QvptMfGb6i6Ir7_8oTcxY1hD_JPFhQ/viewform?usp=sf_link" target="blank">Party Animals</ModalButton>
