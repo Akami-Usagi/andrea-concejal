@@ -47,12 +47,14 @@ const ModalClose = styled.h1`
     top: 10px;
     right: 30px;
     cursor: pointer;
+    color: #1A4682;
 `
 
 const ModalParraf = styled.p`
     width: 95%;
     font-weight: bold;
     font-size: 20px;
+    color: #1A4682;
 `
 
 const ModalButton = styled.a`
@@ -115,7 +117,7 @@ export default function EventModal({isOpen, onClose}){
             <ContentDiv>
                 <ModalClose onClick={onClose}>X</ModalClose>
                 
-                <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Auditorio Club de Leones, Calle 7 # 10-12</ModalParraf>
+                <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Auditorio Club de Leones, Calle 7 # 10-12. ENTRADA TOTALMENTE GRATIS!!!</ModalParraf>
                 <VPlayer src={`https://www.youtube.com/embed/RYsrtnTkeHY?autoplay=1&mute=1&loop=1&playlist=RYsrtnTkeHY`} title="YouTube video player" frameborder="0" allow="fullscreen" ></VPlayer>
 
                 <ButtonsDiv>
