@@ -118,7 +118,7 @@ export default function EventModal({isOpen, onClose}){
                 <ModalClose onClick={onClose}>X</ModalClose>
                 
                 <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Auditorio Club de Leones, Calle 7 # 10-12. ENTRADA TOTALMENTE GRATIS!!!</ModalParraf>
-                <VPlayer src={`https://www.youtube.com/embed/RYsrtnTkeHY?autoplay=1&mute=1&loop=1&playlist=RYsrtnTkeHY`} title="YouTube video player" frameborder="0" allow="fullscreen" ></VPlayer>
+                <VPlayer src={`https://www.youtube.com/embed/Fjc7DPZEs-E?autoplay=1&mute=1&loop=1&playlist=Fjc7DPZEs-E`} title="YouTube video player" frameborder="0" allow="fullscreen" ></VPlayer>
 
                 <ButtonsDiv>
                     <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Asistencia</ModalButton>
