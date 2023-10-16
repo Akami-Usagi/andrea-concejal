@@ -86,19 +86,34 @@ const ButtonsDiv= styled.div`
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 30px;
-    @media (max-width: 430px){
-        gap: 0;
-        margin-top: -30px;
-    }
+    
 `
 const VPlayer = styled.iframe`
-    width: 350px;
-    height: 197px;
-    
+    width: 720px;
+    height: 405px;
     border: none;
     border-radius: 30px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
-    
+    @media (max-width: 850px){
+        width: 600px;
+        height: 337px;
+    }
+    @media (max-width: 700px){
+        width: 500px;
+        height: 281px;
+    }
+    @media (max-width: 600px){
+        width: 400px;
+        height: 225px;
+    }
+    @media (max-width: 450px){
+        width: 350px;
+        height: 197px;
+    }
+    @media (max-width: 385px){
+        width: 95%;
+        
+    }
     
 `
 
@@ -117,14 +132,11 @@ export default function EventModal({isOpen, onClose}){
             <ContentDiv>
                 <ModalClose onClick={onClose}>X</ModalClose>
                 
-                <ModalParraf>Acompañanos este domingo 15 de Octubre a partir de las 2:00PM inscribete como asistente y tambien participa en los diferentes torneos que tendremos para ti. Lugar: Auditorio Club de Leones, Calle 7 # 10-12. ENTRADA TOTALMENTE GRATIS!!!</ModalParraf>
+                <ModalParraf>Muchisimas gracias a todos los asistentes del Festival Otaku, en especial a Gustavo Gallego por haberlo hecho posible, espero contar tambien con el apoyo de todos ustedes en las elecciones del proximo 29 de Octubre!!!</ModalParraf>
                 <VPlayer src={`https://www.youtube.com/embed/Fjc7DPZEs-E?autoplay=1&mute=1&loop=1&playlist=Fjc7DPZEs-E`} title="YouTube video player" frameborder="0" allow="fullscreen" ></VPlayer>
 
                 <ButtonsDiv>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSd4ZWU5fABrj94wDYGGSjY95TxddBRMIo6FsO9lKVbXciMHVw/viewform?usp=sf_link" target="blank">Asistencia</ModalButton>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLScV9iuTghYnv48drTk7QvptMfGb6i6Ir7_8oTcxY1hD_JPFhQ/viewform?usp=sf_link" target="blank">Party Animals</ModalButton>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSeNJ0zM0DMrjftIh_2IphWi7Etd-xqLvKwBlqiodTQQ3aw9wg/viewform?usp=sf_link" target="blank">Just Dance</ModalButton>
-                    <ModalButton href="https://docs.google.com/forms/d/e/1FAIpQLSe2qF4aSTwAJbMGpLm8NEKztXQainvn3RY18To9yxgEgxmJMg/viewform?usp=sf_link" target="blank">Cosplay</ModalButton>
+                    <ModalButton href="https://www.gustavogallego.com.co/" target="blank">Web Gustavo Gallego</ModalButton>
                 </ButtonsDiv>
             </ContentDiv>            
         </ModalDiv>
